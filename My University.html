@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="My University.html">My University</a></li>
+                <li><a href="RESUME.html">RESUME</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>My University</h1>
+
+</section>
+
+<!--------My University-------->
+<section class="My-University">
+    <div class="row">
+        <div class="University-col">
+            <h1>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</h1>
+            <p>King Mongkut's University of Technology North Bangkok considers that educational outcomes are good. That creates desirable KMUTNB graduates from students' desire for knowledge and action. Therefore, the university has guidelines for organizing education under the concept of “Outstanding academics From learning by doing (Academic Excellence with Hands-on Experience)” It focuses on education that emphasizes student outcomes to produce graduates that respond to the needs of industry, business, and society by combining theory with actual practice both in educational institutions and in workplaces (Cooperative Education) </p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW></a>
+        </div>
+        <div class="University-col">
+            <img src="images/explore.png" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--------Footer-------->
+<section class="footer">
+    <h4>Aboute</h4>
+    <p>Be eager to learn new things and bring errors to
+        be corrected Can accept pressure Ready to solve
+        problems and responsible</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-link"></i>
+    </div>
+    <p>Please<i class="fa-solid fa-heart"></i></i>Give Me More Grade</p>
+
+</section>
+
+<!--------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

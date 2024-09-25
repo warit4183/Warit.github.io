@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="My University.html">My University</a></li>
+                <li><a href="RESUME.html">RESUME</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</h1>
+    <p>King Mongkut's University of Technology North Bangkok considers good educational results to be the damage that KMUTNB needs to have. It arises from students' desire to know and be able to take action.<br> Therefore, the university itself organizes education under the concept of the concept. “Academic Excellence with Hands-on Experience”</p>
+    <a href="" class="hero-btn">Visit To Know More</a>
+</div>
+            
+
+</section>
+
+<!------RESUME------->
+<section class="RESUME"> 
+    <h1>RESUME</h1>
+    <p> PERSONAL SUMMARY : Be eager to learn new things and bring errors to
+        be corrected Can accept pressure Ready to solve
+        problems and responsible</p>
+    <div class="row">
+        <div class="RESUME-col">
+            <h3>Faculty of Education</h3>
+            <p>Khon Kaen Technical College : 2018-2019</p>
+        </div>
+        <div class="RESUME-col">
+            <h3>Faculty of Technical Education</h3>
+            <p>Rajamangala University of Technology Isan Khonkaen Campus : 2020-2021</p>
+        </div>
+        <div class="RESUME-col">
+            <h3>Faculty of Engineering</h3>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK : 2022-current</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-------- EXPERIENCE-------->
+<section class="EXPERIENCE">
+        <h1> EXPERIENCE </h1>
+        <p>Experiences during the time of education</p>
+
+        <div class="row">
+            <div class="EXPERINCE-col">
+                <img src="images/intern1.png.png">
+                <div class="layer">
+                    <h3>trans thai-malaysia (thailand) limited</h3>
+                </div>
+            </div>
+            <div class="EXPERINCE-col">
+                <img src="images/intern3.png.png">
+                <div class="layer">
+                    <h3>JKP ENGINEERING RADIO LIMITED PARTNERSHIP</h3>
+                </div>
+            </div>
+            <div class="EXPERINCE-col">
+                <img src="images/intern2.png.png">
+                <div class="layer">
+                    <h3>Ricoh (Thailand)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--------SKILL-------->
+
+<section class="SKILL">
+    <h1>SKILL</h1>
+    <p>Skills gained from studying</p>
+
+    <div class="row">
+        <div class="SKILL-col">
+            <img src="images/skill1.png">
+            <h3>Communication</h3>
+            <p>communication skills are the ability to listen and understand others. Give co-workers an opportunity to express their opinions</p>
+        </div>
+        <div class="SKILL-col">
+            <img src="images/skill2.png">
+            <h3>Knowledgeable in using MS and Program </h3>
+            <p>Computer skills are basic things that everyone must know. If we can use various programs 
+                Especially MS Office is at a medium to high level. It will help us work much easier</p>
+        </div>
+        <div class="SKILL-col">
+            <img src="images/skill3.png">
+            <h3>Collaboration and Teamwork</h3>
+            <p>Skills for working with others and teamwork Because most work requires working together with many people</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!--------Footer-------->
+<section class="footer">
+    <h4>About Me</h4>
+    <p>Be eager to learn new things and bring errors to
+        be corrected Can accept pressure Ready to solve
+        problems and responsible</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-link"></i>
+    </div>
+    <p>Please<i class="fa-solid fa-heart"></i></i>Give Me More Grade</p>    
+
+</section>
+
+<!--------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
