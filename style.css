@@ -164,6 +164,7 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
+
 .RESUME-col:hover{
     box-shadow: 0 0 20px 0px rgb(0, 0, 0);
 }
@@ -319,6 +320,9 @@ table, th, td {
     color: #fff;
 }
 
+
+
+
 /*--------blog content--------*/
 .blog-content{
     width: 80%;
@@ -342,7 +346,9 @@ table, th, td {
 }
 .blog-right{
     flex-basis: 32%;
+    margin: 15px;
 }
+
 .blog-right h3{
     background: #f44336;
     color: #fff;
@@ -359,19 +365,7 @@ table, th, td {
     box-sizing: border-box;
 }
 
-/*--------TABLE API----------*/
-
-.table {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.info-get{
-    margin-top: 30px;
-}
-
-.info-get h1{
+.blog-right h3{
     background: #f44336;
     color: #fff;
     padding: 7px 0;
@@ -379,41 +373,55 @@ table, th, td {
     margin-bottom: 20px;
 }
 
-.table-th{
-    border: 1px solid #000000;
-    padding: 8px 12px;
-    text-align: center;
-}
+
+
+/*--------TABLE API----------*/
+
+
+
 .table-sensor {
-    width: 50%;
+    padding: 8px 12px;
+    width: 100%; 
+    max-width: 700px; 
     border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 40px auto; 
 }
 
-.table-sensor th {
-    border: 1px solid #000000;
-    padding: 8px 12px;
-    text-align: center;
-}
-
-.table-sensor td {
-    border: 1px solid #000000;
-    padding: 8px 12px;
-    text-align: center;
-}
-
-.td-sensor {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #000000;
-}
-
-.td-sensor div {
+.table-sensor thead tr {
+    background-color: #f44336;
+    color: #fff;
+    text-align: left;
     font-weight: bold;
 }
 
-.table-sensor tr:hover {
-    background-color: #f1f1f1;
+.table-sensor th, .table-sensor td {
+    padding: 6px 8px;
+    text-align: center;
 }
+
+.table-sensor tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-sensor tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table-sensor tbody tr:last-of-type {
+    border-bottom: 2px solid #e4ae1a;
+}
+
+
+
+@media (max-width: 700px) {  
+    .table-sensor th, .table-sensor td {
+        padding: 6px 8px; 
+    }
+}
+
 
 @media(max-width:700px){
     .sub-header h1{
@@ -466,6 +474,12 @@ table, th, td {
     color: #555;
     font-weight: 400;
 }
+
+
+
+
+/*-------------------API post--------------*/
+
 .api-post{
     border: 1px solid #ccc;
     margin: 50px 0;
