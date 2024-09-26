@@ -19,7 +19,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="My University.html">My University</a></li>
                 <li><a href="RESUME.html">RESUME</a></li>
-                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Blog.html">Blog&API</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
@@ -33,7 +33,7 @@
 <section class="blog-content">
     <div class="row">
         <div class="blog-left">
-            <img src="images/blog test.png">
+            <img src="images/blog.png">
             <h2>Certificate & Program For 2024</h2>
             <p>Throughout my career, I have accumulated extensive experience in engineering, particularly in fields such as electrical and software engineering. I have worked on various projects that require a strong understanding of both theoretical concepts and practical applications. For instance, I played a pivotal role in designing and implementing a complex automation system that improved production efficiency by 30%. This project not only honed my technical skills but also enhanced my project management and teamwork capabilities.</p>
             <br>
@@ -43,42 +43,103 @@
             <br>
             <p>My diverse experience and certifications not only underscore my technical abilities but also reflect my dedication to continuous learning and professional growth. I am passionate about staying current with industry trends and emerging technologies, ensuring that I can contribute innovative solutions to engineering and programming challenges in any organization.</p>
         
-        <div class="Comment">
-            <h3>SendYourname
-                <form action="Type-Name">
-                    <input type="text" placeholder="ID">
-                    <input type="text" placeholder="Name">
-                    <button type="submit" class="hero-btn red-btn">Send</button>
+
+
+
+            <div class="api-post">
+                <form onsubmit="event.preventDefault(); submitData();">
+                    <div class="api-post-box-name">
+                        <p class="text-titleonbox" >NAME</p>
+                        <input class="box-input-text" type="text" id="studentId" required placeholder="Enter StudentID">
+                    </div>
+                    <div class="api-post-box-id">
+                        <p class="text-titleonbox" >ID</p>
+                        <input class="box-input-text" type="text" id="studentName" required placeholder="Enter name">
+                    </div>
+                    <div class="api-post-box-sent">
+                        <input class="hero-btn red-btn" type="submit" >
+                    </div>
+                
                 </form>
-            </h3>
+            
+            <script src="Api-post.js"></script>
+            </div>
         </div>
-        
+
+
+
+
+
+            <div class="blog-right">
+                <h3>Post Experiences</h3>
+                <div>
+                    <span>Computer programming</span>
+                    <span>5/10</span>
+                </div>
+                <div>
+                    <span>PLC</span>
+                    <span>6/10</span>
+                </div>
+                <div>
+                    <span>Machine learning</span>
+                    <span>6/10</span>
+                </div>
+                <div>
+                    <span>Math</span>
+                    <span>5/10</span>
+                </div>
+            
+            
+
+
+
+        <div class="info-get">
+            <div class="table"><h1>Sensor Data</h1></div>
+            <table class="table-sensor" aria-label="Sensor-Data">
+                <thead>
+                    <tr>
+                        <th class="table-th">Sensor</th>
+                        <th class="table-th">Value</th>
+                        <th class="table-th">Unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Timestamp</td>
+                        <td class="td-sensor"><div id="timestamp">Loading...</div></td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Temperature</td>
+                        <td class="td-sensor"><div id="temperature">Loading...</div></td>
+                        <td>°C</td>
+                    </tr>
+                    <tr>
+                        <td>Luxsensor</td>
+                        <td class="td-sensor"><div id="luxsensor">Loading...</div></td>
+                        <td>Lux</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td class="td-sensor"><div id="humidity">Loading...</div></td>
+                        <td>%RH</td>
+                        </tr>
+                        <tr>
+                        <td>Motion</td>
+                        <td class="td-sensor"><div id="motion">Loading...</div></td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="blog-right">
-            <h3>Post Experiences</h3>
-            <div>
-                <span>Computer programming</span>
-                <span>5/10</span>
-            </div>
-            <div>
-                <span>PLC</span>
-                <span>6/10</span>
-            </div>
-            <div>
-                <span>Machine learning</span>
-                <span>6/10</span>
-            </div>
-            <div>
-                <span>Math</span>
-                <span>5/10</span>
-            </div>
         </div>
     </div>
+    <script src="Api-sensor.js"></script>
 
 
 </section>
 
-<!--------SKILL-------->
+
 
 
 
@@ -86,14 +147,14 @@
 
 <!--------Footer-------->
 <section class="footer">
-    <h4>About Me</h4>
+    <h4>My MOTTO</h4>
     <p>Be eager to learn new things and bring errors to
         be corrected Can accept pressure Ready to solve
         problems and responsible</p>
     <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-link"></i>
+        <a target="_blank" href="https://www.facebook.com/warit.sooktorn.9"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/_warit.st/"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="https://www.kmutnb.ac.th/"><i class="fa-solid fa-link"></i></a>
     </div>
     <p>Please<i class="fa-solid fa-heart"></i></i>Give Me More Grade</p>    
 

@@ -219,6 +219,9 @@ h3{
     bottom: 49%;
     opacity: 1;
 }
+table, th, td {
+    border:1px solid black;
+}
 
 /*-------SKILL-------*/
 .SKILL{
@@ -355,6 +358,63 @@ h3{
     padding: 8px;
     box-sizing: border-box;
 }
+
+/*--------TABLE API----------*/
+
+.table {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-get{
+    margin-top: 30px;
+}
+
+.info-get h1{
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.table-th{
+    border: 1px solid #000000;
+    padding: 8px 12px;
+    text-align: center;
+}
+.table-sensor {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.table-sensor th {
+    border: 1px solid #000000;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.table-sensor td {
+    border: 1px solid #000000;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.td-sensor {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #000000;
+}
+
+.td-sensor div {
+    font-weight: bold;
+}
+
+.table-sensor tr:hover {
+    background-color: #f1f1f1;
+}
+
 @media(max-width:700px){
     .sub-header h1{
         font-size: 24px;
@@ -406,16 +466,16 @@ h3{
     color: #555;
     font-weight: 400;
 }
-.Comment{
+.api-post{
     border: 1px solid #ccc;
     margin: 50px 0;
     padding: 10px 20px;
 }
-.Comment h3{
+.api-post-box-name{
     text-align: left;
 
 }
-.Type-Name input{
+.box-input-text{
     width: 100%;
     padding: 10px;
     margin: 15px 0;
@@ -424,6 +484,11 @@ h3{
     outline: none;
     background: #cccccc;
 }
+.api-post-box-id{
+    text-align: left;
+
+}
+
 .Type-Name button{
     margin: 10px 0;
 }
