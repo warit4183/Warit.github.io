@@ -415,7 +415,7 @@ table, th, td {
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin: 40px auto; 
+    margin: auto; 
 }
 
 .table-sensor thead tr {
@@ -443,7 +443,7 @@ table, th, td {
 }
 
 .table-sensor tbody tr:last-of-type {
-    border-bottom: 2px solid #f44336;
+    border-bottom: 4px solid #f44336;
 }
 
 
