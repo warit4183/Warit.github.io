@@ -346,7 +346,7 @@ table, th, td {
 }
 .blog-right{
     flex-basis: 32%;
-    margin: 15px;
+    margin: 20px;
 }
 
 .blog-right h3{
@@ -373,9 +373,37 @@ table, th, td {
     margin-bottom: 20px;
 }
 
+/*-------------------API post--------------*/
+
+.api-post{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.api-post-box-name{
+    text-align: left;
+
+}
+.box-input-text{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #cccccc;
+}
+.api-post-box-id{
+    text-align: left;
+
+}
+
+.Type-Name button{
+    margin: 10px 0;
+}
 
 
-/*--------TABLE API----------*/
+/*--------SENSOR API----------*/
 
 
 
@@ -402,6 +430,10 @@ table, th, td {
     text-align: center;
 }
 
+.table-sensor td div{
+    justify-content: center;
+}
+
 .table-sensor tbody tr {
     border-bottom: 1px solid #dddddd;
 }
@@ -411,7 +443,7 @@ table, th, td {
 }
 
 .table-sensor tbody tr:last-of-type {
-    border-bottom: 2px solid #e4ae1a;
+    border-bottom: 2px solid #f44336;
 }
 
 
@@ -478,31 +510,3 @@ table, th, td {
 
 
 
-/*-------------------API post--------------*/
-
-.api-post{
-    border: 1px solid #ccc;
-    margin: 50px 0;
-    padding: 10px 20px;
-}
-.api-post-box-name{
-    text-align: left;
-
-}
-.box-input-text{
-    width: 100%;
-    padding: 10px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background: #cccccc;
-}
-.api-post-box-id{
-    text-align: left;
-
-}
-
-.Type-Name button{
-    margin: 10px 0;
-}

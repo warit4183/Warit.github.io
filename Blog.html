@@ -49,11 +49,11 @@
             <div class="api-post">
                 <form onsubmit="event.preventDefault(); submitData();">
                     <div class="api-post-box-name">
-                        <p class="text-titleonbox" >NAME</p>
+                        <p class="text-titleonbox" >ID</p>
                         <input class="box-input-text" type="text" id="studentId" required placeholder="Enter StudentID">
                     </div>
                     <div class="api-post-box-id">
-                        <p class="text-titleonbox" >ID</p>
+                        <p class="text-titleonbox" >NAME</p>
                         <input class="box-input-text" type="text" id="studentName" required placeholder="Enter name">
                     </div>
                     <div class="api-post-box-sent">
@@ -93,7 +93,7 @@
 
 <!------------TABLE-------------->
 
-                <br><br>
+                <br><br><br>
                 <h3>Sensor Data</h3>
             <table class="table-sensor">
                 <thead>
@@ -106,28 +106,28 @@
                 <tbody>
                     <tr>
                         <td>Timestamp</td>
-                        <td class="td-sensor"><div id="timestamp">Loading...</div></td>
-                        <td>None</td>
+                        <td ><div id="timestamp">Loading...</div></td>
+                        <td>mS</td>
                     </tr>
                     <tr>
                         <td>Temperature</td>
-                        <td class="td-sensor"><div id="temperature">Loading...</div></td>
+                        <td ><div id="temperature">Loading...</div></td>
                         <td>°C</td>
                     </tr>
                     <tr>
                         <td>Luxsensor</td>
-                        <td class="td-sensor"><div id="luxsensor">Loading...</div></td>
-                        <td>Lux</td>
+                        <td ><div id="luxsensor">Loading...</div></td>
+                        <td>lux</td>
                     </tr>
                     <tr>
                         <td>Humidity</td>
-                        <td class="td-sensor"><div id="humidity">Loading...</div></td>
+                        <td ><div id="humidity">Loading...</div></td>
                         <td>%RH</td>
                         </tr>
                         <tr>
                         <td>Motion</td>
-                        <td class="td-sensor"><div id="motion">Loading...</div></td>
-                        <td>-</td>
+                        <td ><div id="motion">Loading...</div></td>
+                        <td>none</td>
                     </tr>
                 </tbody>
             </table>

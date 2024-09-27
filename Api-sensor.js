@@ -1,5 +1,5 @@
 function updateData() {
-    fetch('http://206.189.146.138/api/sensors')
+    fetch('https://206.189.146.138/api/sensors')
     .then(response => response.json())
     .then(data => {
         document.getElementById('timestamp').textContent = data.timestamp;
